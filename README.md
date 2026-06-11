@@ -1,6 +1,10 @@
-```
-Copyright (c) 2026 ERRORLY
+![img](static/img/homepage-ss.png)
 
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
-See the LICENSE file for details.
-```
+Bintoo Website: Website of Bintoo
+
+Technologies Use:
+- React
+- [Docusaurus](https://docusaurus.io/) (for documentation)
+- Little Bit of Bintoo Power
+
+Created by Nibraas Labs
