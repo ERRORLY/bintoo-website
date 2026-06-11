@@ -1,20 +1,4 @@
-TODO
+Copyright (c) 2026 ERRORLY
 
-- [x] Fix Logo
-- [x] Add docs
-- [x] Add Blogs
-- [x] Add Features
-- [x] Discord
-- [x] Download Section
-- [x] about me
-- [x] add some docs
-- [x] Add TOS/ Privacy Policy
-- [x] One Blog
-- [x] Change Footer in docs of social links
-- [ ] delete docs
-
-## Post Development
-- [ ] Video
-
-### Future Stuff
-- [ ] Coffee
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
+See the LICENSE file for details.
