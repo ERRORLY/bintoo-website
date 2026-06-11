@@ -1,0 +1,95 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+
+.tailwind-preflight-scope {
+  @import "tailwindcss/preflight.css" layer(base);
+}
+
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-primary: #13ec5b;
+  --color-primary-dark: #0cbe44;
+  --color-background-light: #f8fafc;
+  --color-background-dark: #0a0f0c;
+  --color-surface-dark: #111814;
+  --color-surface-highlight: #1a241e;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --shadow-glow: 0 0 15px rgba(19, 236, 91, 0.3);
+  --shadow-glow-lg: 0 0 25px rgba(19, 236, 91, 0.5);
+}
+
+/* Custom utility classes */
+.emerald-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #13ec5b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-bg {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(19, 236, 91, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(19, 236, 91, 0.05) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0f0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a241e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #13ec5b;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
