@@ -15,6 +15,7 @@ export default function Home() {
     twitter: "https://x.com/bintoo_xyz",
     discord: "https://discord.gg/eGWSxbnXrh",
     youtube: "https://www.youtube.com/@bintoo_xyz",
+    github: "https://github.com/ERRORLY/bintoo-website",
     coffee: "",
   };
 
@@ -50,13 +51,13 @@ export default function Home() {
             <nav className="hidden md:flex items-center gap-8">
               <Link
                 className="text-sm font-medium text-slate-300 hover:text-primary transition-colors"
-                to="/docs/intro"
+                to={bintoo.docs}
               >
                 Docs
               </Link>
               <a
                 className="text-sm font-medium text-slate-300 hover:text-primary transition-colors"
-                href="/#features"
+                href="#features"
               >
                 Features
               </a>
@@ -125,7 +126,7 @@ export default function Home() {
                 Download Bintoo
               </button>
               <Link
-                to="/docs/intro"
+                to={bintoo.docs}
                 className="cursor-pointer flex items-center justify-center rounded-xl border border-slate-700 bg-surface-dark px-8 py-4 text-base font-bold text-white hover:border-primary/50 hover:bg-surface-highlight"
               >
                 <span className="material-symbols-outlined mr-2">
@@ -552,6 +553,17 @@ export default function Home() {
                   </a>
                   <a
                     className="text-slate-400 hover:text-white"
+                    href={bintoo.github}
+                    target="_blank"
+                  >
+                    <img
+                      src="https://cdn.simpleicons.org/github/ffffff"
+                      alt="github"
+                      className="w-5 h-5 "
+                    />{" "}
+                  </a>
+                  <a
+                    className="text-slate-400 hover:text-white"
                     href={bintoo.twitter}
                     target="_blank"
                   >
@@ -570,7 +582,7 @@ export default function Home() {
                   <li>
                     <Link
                       className="hover:text-primary transition-colors"
-                      to="/docs"
+                      to={bintoo.docs}
                     >
                       Documentation
                     </Link>
