@@ -10,7 +10,7 @@ export default function Home() {
 
   const bintoo = {
     name: "Bintoo",
-    docs: "/docs",
+    docs: "/docs/intro",
     gmail: "bintooxyz@gmail.com",
     twitter: "https://x.com/bintoo_xyz",
     discord: "https://discord.gg/eGWSxbnXrh",

@@ -11,10 +11,8 @@ TODO
 - [x] Add TOS/ Privacy Policy
 - [x] One Blog
 - [x] Change Footer in docs of social links
-- [ ] delete docs
+- [x] delete docs
+- [ ] Coffee
 
 ## Post Development
 - [ ] Video
-
-### Future Stuff
-- [ ] Coffee
