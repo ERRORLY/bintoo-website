@@ -77,6 +77,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
         size: "45.2 MB",
         ext: ".exe",
         type: "Setup Installer (Recommended)",
+        sha: "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed",
       },
       // secondary: {
       //   name: "Windows Portable",
@@ -94,6 +95,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
         size: "46.8 MB",
         ext: ".AppImage",
         type: "Universal AppImage (Recommended)",
+        sha: "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed",
       },
       // secondary: {
       //   name: "Linux Tarball",
@@ -205,12 +207,16 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
           </a>
 
           {/* Size & Info Metadata */}
-          <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 mt-4 text-[11px] text-slate-500">
-            <span>Size: {currentDownload.primary.size}</span>
+          <div className="text-[11px] text-slate-500 ">
+            <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 mt-4 text-[11px] text-slate-500">
+              <span>Size: {currentDownload.primary.size}</span>
+              <span className="h-1 w-1 rounded-full bg-slate-700"></span>
+              <span>Format: {currentDownload.primary.ext}</span>
+              <span className="h-1 w-1 rounded-full bg-slate-700"></span>
+              <span>Release: v1.0.0</span>
+            </div>
             <span className="h-1 w-1 rounded-full bg-slate-700"></span>
-            <span>Format: {currentDownload.primary.ext}</span>
-            <span className="h-1 w-1 rounded-full bg-slate-700"></span>
-            <span>Release: v1.0.0</span>
+            <span>SHA-1: {currentDownload.primary.sha}</span>
           </div>
 
           {/* Secondary Download option if available */}
