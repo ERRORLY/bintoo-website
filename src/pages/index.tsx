@@ -590,7 +590,7 @@ export default function Home() {
                   <li>
                     <Link
                       className="hover:text-primary transition-colors"
-                      to="http://localhost:3000/blog/tags/release"
+                      to="/blog/tags/release"
                     >
                       Release Notes
                     </Link>
