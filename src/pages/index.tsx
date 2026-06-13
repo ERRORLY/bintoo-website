@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <div className="tailwind-preflight-scope bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary selection:text-black">
+    <div className="tailwind-preflight-scope bg-background-dark font-display text-slate-100 antialiased selection:bg-primary selection:text-black">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         {/* HEADER */}
         <header className="fixed top-0 left-0 right-0 z-50 border-b border-surface-highlight bg-background-dark/80 backdrop-blur-md px-6 py-4">
