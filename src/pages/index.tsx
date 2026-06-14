@@ -139,11 +139,14 @@ export default function Home() {
             {/* APP MOCKUP */}
             <div className="w-full max-w-5xl mx-auto">
               <div className="relative rounded-2xl border border-surface-highlight bg-surface-dark p-2 shadow-2xl">
-                <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-black border border-surface-highlight/50">
+                <div
+                  className="relative w-full overflow-hidden rounded-xl bg-black border border-surface-highlight/50"
+                  style={{ aspectRatio: "1366/742" }}
+                >
                   <div
-                    className="absolute inset-0 rounded-xl bg-cover bg-center opacity-90"
+                    className="absolute inset-0 rounded-xl bg-contain bg-no-repeat bg-center opacity-90"
                     style={{
-                      backgroundImage: "url('/dashboard-mockup.png')",
+                      backgroundImage: "url('/dashboard.png')",
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background-dark/30 via-transparent to-transparent pointer-events-none"></div>
