@@ -24,7 +24,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(
-      "curl -fsS https://bintoo.xyz/install/bintoo-linux.sh | bash",
+      "curl -fsSL https://bintoo.xyz/install/bintoo-linux.sh | bash",
     );
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -284,7 +284,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
                 <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap text-slate-300 thin-scrollbar">
                   <span className="text-primary font-bold select-none">$</span>
                   <span>
-                    curl -fsS https://bintoo.xyz/install/bintoo-linux.sh | bash
+                    curl -fsSL https://bintoo.xyz/install/bintoo-linux.sh | bash
                   </span>
                 </div>
                 <button
