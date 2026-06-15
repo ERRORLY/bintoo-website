@@ -82,19 +82,17 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
   > = {
     windows: {
       primary: {
-        name: "Windows Installer",
-        url: "https://github.com/errorly-project/bintoo/releases/download/v1.0.0/bintoo-setup-1.0.0.exe",
-        size: "45.2 MB",
+        name: "Windows Installer (Recommended)",
+        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_x64_en-US.msi",
         ext: ".msi",
-        type: "Setup Installer (Recommended)",
+        type: "MSI Installer (Recommended)",
         sha: "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed",
       },
       secondary: {
-        name: "Windows Portable",
-        url: "https://github.com/errorly-project/bintoo/releases/download/v1.0.0/bintoo-portable-1.0.0.zip",
-        size: "48.1 MB",
+        name: "NSIS Installer",
+        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_x64-setup.exe",
         ext: ".nsis",
-        type: "Portable Zip (No Install)",
+        type: "Another Setup",
       },
       note: "SmartScreen warning? See our guide on how to bypass the unsigned application warning.",
     },
@@ -104,7 +102,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
         url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_amd64.AppImage",
         size: "83.6 MB",
         ext: ".AppImage",
-        type: "Universal AppImage (Recommended)",
+        type: "Universal AppImage",
         sha: "sha256:f7c0448fe5b528b8a7adbf5ac787dd1dd6f909f4921285b916f13edc7f61f69c",
       },
       // secondary: {
@@ -141,9 +139,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       {/* Backdrop overlay */}
-      <div
-        className="fixed inset-0 bg-black/75 transition-opacity duration-200 cursor-default"
-      ></div>
+      <div className="fixed inset-0 bg-black/75 transition-opacity duration-200 cursor-default"></div>
 
       {/* Modal Container */}
       <div className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-slate-800/80 bg-[#070b09] shadow-2xl transition-all duration-200 transform scale-100 flex flex-col z-10 max-h-[90vh]">
@@ -216,8 +212,6 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
               {/* Size & Info Metadata */}
               <div className="text-[11px] text-slate-500 w-full mb-2">
                 <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 mt-4 text-[11px] text-slate-500">
-                  <span>Size: {downloads.windows.primary.size}</span>
-                  <span className="h-1 w-1 rounded-full bg-slate-700"></span>
                   <span>Format: {downloads.windows.primary.ext}</span>
                   <span className="h-1 w-1 rounded-full bg-slate-700"></span>
                   <span>Release: v1.0.0</span>
@@ -237,8 +231,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
                           {downloads.windows.secondary.name}
                         </h5>
                         <p className="text-[10px] text-slate-500 truncate">
-                          {downloads.windows.secondary.type} •{" "}
-                          {downloads.windows.secondary.size}
+                          {downloads.windows.secondary.type}
                         </p>
                       </div>
                       <a
