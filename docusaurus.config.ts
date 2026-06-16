@@ -23,7 +23,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://bintoo.org",
+  url: "https://bintoo.xyz",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -73,6 +73,12 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        sitemap: {
+          changefreq: "weekly",
+          priority: 0.5,
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -81,7 +87,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "banner/docs-banner.png",
     colorMode: {
       defaultMode: "dark",
       disableSwitch: true,
@@ -91,6 +97,38 @@ const config: Config = {
       {
         name: "google-material-icons",
         content: "enabled",
+      },
+      {
+        name: "keywords",
+        content: "Minecraft, Minecraft server, local hosting, free Minecraft hosting, server manager, Bintoo, Bintoo server, hosting software, Spigot, Paper, Forge, Fabric, local Minecraft server",
+      },
+      {
+        name: "description",
+        content: "Bintoo is a free local hosting software for Minecraft servers. Easily set up, manage, and run a Minecraft server on your own computer with plugin and mod support.",
+      },
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+      {
+        property: "og:site_name",
+        content: "Bintoo",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:site",
+        content: "@bintoo_xyz",
+      },
+      {
+        name: "twitter:creator",
+        content: "@bintoo_xyz",
       },
     ],
     navbar: {
