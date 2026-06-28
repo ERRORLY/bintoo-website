@@ -83,14 +83,14 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
     windows: {
       primary: {
         name: "Windows Installer (Recommended)",
-        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_x64_en-US.msi",
+        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.1.0/Bintoo_1.1.0_x64_en-US.msi",
         ext: ".msi",
         type: "MSI Installer (Recommended)",
         sha: "2aae6c35c94fcfb415dbe95f408b9ce91ee846ed",
       },
       secondary: {
         name: "NSIS Installer",
-        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_x64-setup.exe",
+        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.1.0/Bintoo_1.1.0_x64-setup.exe",
         ext: ".nsis",
         type: "Another Setup",
       },
