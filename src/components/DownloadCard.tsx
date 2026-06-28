@@ -81,6 +81,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
     }
   > = {
     windows: {
+      version: "1.1.0",
       primary: {
         name: "Windows Installer (Recommended)",
         url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.1.0/Bintoo_1.1.0_x64_en-US.msi",
@@ -214,7 +215,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
                 <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 mt-4 text-[11px] text-slate-500">
                   <span>Format: {downloads.windows.primary.ext}</span>
                   <span className="h-1 w-1 rounded-full bg-slate-700"></span>
-                  <span>Release: v1.0.0</span>
+                  <span>Release: v{downloads.windows.version}</span>
                 </div>
               </div>
 
@@ -289,6 +290,15 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
                     {copied ? "check" : "content_copy"}
                   </span>
                 </button>
+              </div>
+
+              {/* Size & Info Metadata */}
+              <div className="text-[11px] text-slate-500 w-full">
+                <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 mt-4 text-[11px] text-slate-500">
+                  <span>Format: {downloads.linux.primary.ext}</span>
+                  <span className="h-1 w-1 rounded-full bg-slate-700"></span>
+                  <span>Release: v{downloads.windows.version}</span>
+                </div>
               </div>
 
               {/* Copy success status text */}
