@@ -49,7 +49,7 @@ export default function Hero({
           </button>
           <Link
             to={bintoo.docs}
-            className="cursor-pointer flex items-center justify-center rounded-xl border-2 border-gray-400 bg-surface-dark px-8 py-4 text-base font-bold text-white shadow-[0_4px_0px_0px_#64748B] hover:translate-y-[4px] hover:shadow-none hover:bg-surface-highlight transition-all duration-150 ease-in-out"
+            className="cursor-pointer flex items-center justify-center rounded-xl border-2 border-gray-200 bg-surface-dark px-8 py-4 text-base font-bold text-white shadow-[0_4px_0px_0px_#64748B] hover:translate-y-[4px] hover:shadow-none hover:bg-surface-highlight transition-all duration-150 ease-in-out"
           >
             <span className="material-symbols-outlined mr-2">description</span>
             View Docs

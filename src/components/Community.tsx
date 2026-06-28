@@ -91,7 +91,7 @@ export default function Community({ bintoo }: CommunityProps) {
               target="_blank"
               onMouseEnter={() => setCommunityButtonHovered(true)}
               onMouseLeave={() => setCommunityButtonHovered(false)}
-              className="cursor-pointer flex items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-black shadow-glow hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:text-white w-full sm:w-auto"
+              className="cursor-pointer flex items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-black border-2 border-green-300 shadow-[0_4px_0px_0px_#13ec5b] hover:translate-y-[4px] hover:shadow-none hover:bg-blue-500 hover:text-white hover:border-blue-300 transition-all duration-150 ease-in-out w-full sm:w-auto"
             >
               <span className="material-symbols-outlined mr-2">forum</span>
               Join Our Discord Server

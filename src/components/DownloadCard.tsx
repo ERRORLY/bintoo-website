@@ -201,7 +201,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
               {/* Primary Action Button */}
               <a
                 href={downloads.windows.primary.url}
-                className="group w-full flex items-center justify-center gap-2.5 rounded-xl bg-primary text-black px-6 py-4.5 text-sm font-bold border-2 border-black shadow-[0_4px_0px_0px_#13ec5b] hover:translate-y-[4px] hover:shadow-none transition-all duration-150 ease-in-out cursor-pointer"
+                className="group w-full flex items-center justify-center gap-2.5 rounded-xl bg-primary hover:bg-[#1dff68] text-black px-6 py-4.5 text-sm font-bold transition-all duration-150 cursor-pointer shadow-sm"
               >
                 <span className="material-symbols-outlined text-[18px]">
                   download
