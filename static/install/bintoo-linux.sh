@@ -3,10 +3,10 @@
 # ==========================================
 # CONFIGURATION
 # ==========================================
-APPIMAGE_URL="https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_amd64.AppImage"
+APPIMAGE_URL="https://github.com/ERRORLY/bintoo-website/releases/download/1.1.0/Bintoo_1.1.0_amd64.AppImage"
 ICON_URL="https://raw.githubusercontent.com/ERRORLY/bintoo-website/main/static/bintoo-logo.png"
 APP_NAME="Bintoo"
-APPIMAGE_FILE="Bintoo_1.0.0_amd64.AppImage"
+APPIMAGE_FILE="Bintoo.AppImage"
 ICON_FILE="Bintoo.png"
 
 # ==========================================

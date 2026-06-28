@@ -100,11 +100,13 @@ const config: Config = {
       },
       {
         name: "keywords",
-        content: "Minecraft, Minecraft server, local hosting, free Minecraft hosting, server manager, Bintoo, Bintoo server, hosting software, Spigot, Paper, Forge, Fabric, local Minecraft server",
+        content:
+          "Minecraft, Minecraft server, local hosting, free Minecraft hosting, server manager, Bintoo, Bintoo server, hosting software, Spigot, Paper, Forge, Fabric, local Minecraft server",
       },
       {
         name: "description",
-        content: "Bintoo is a free local hosting software for Minecraft servers. Easily set up, manage, and run a Minecraft server on your own computer with plugin and mod support.",
+        content:
+          "Bintoo is a free local hosting software for Minecraft servers. Easily set up, manage, and run a Minecraft server on your own computer with plugin and mod support.",
       },
       {
         name: "robots",
