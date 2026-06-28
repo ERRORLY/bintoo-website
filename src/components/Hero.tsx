@@ -42,14 +42,14 @@ export default function Hero({
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <button
             onClick={onDownloadClick}
-            className="cursor-pointer flex items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-black shadow-glow hover:bg-[#1dff68] hover:shadow-glow-lg"
+            className="cursor-pointer flex items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-black border-2 border-green-300 shadow-[0_4px_0px_0px_#22C55E] hover:translate-y-[4px] hover:shadow-none transition-all duration-150 ease-in-out"
           >
             <span className="material-symbols-outlined mr-2">download</span>
             Download Bintoo
           </button>
           <Link
             to={bintoo.docs}
-            className="cursor-pointer flex items-center justify-center rounded-xl border border-slate-700 bg-surface-dark px-8 py-4 text-base font-bold text-white hover:border-primary/50 hover:bg-surface-highlight"
+            className="cursor-pointer flex items-center justify-center rounded-xl border-1 border-white bg-surface-dark px-8 py-4 text-base font-bold text-white shadow-[0_4px_0px_0px_#64748B] hover:translate-y-[4px] hover:shadow-none hover:bg-surface-highlight transition-all duration-150 ease-in-out"
           >
             <span className="material-symbols-outlined mr-2">description</span>
             View Docs

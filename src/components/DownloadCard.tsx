@@ -99,19 +99,19 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
     linux: {
       primary: {
         name: "Linux AppImage",
-        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.0.0/Bintoo_1.0.0_amd64.AppImage",
-        size: "83.6 MB",
+        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.1.0/Bintoo_1.1.0_amd64.AppImage",
+        size: "84.0 MB",
         ext: ".AppImage",
         type: "Universal AppImage",
         sha: "sha256:f7c0448fe5b528b8a7adbf5ac787dd1dd6f909f4921285b916f13edc7f61f69c",
       },
-      // secondary: {
-      //   name: "Linux Tarball",
-      //   url: "https://github.com/errorly-project/bintoo/releases/download/v1.0.0/bintoo-1.0.0.tar.gz",
-      //   size: "44.9 MB",
-      //   ext: ".tar.gz",
-      //   type: "Compressed Binary Archive",
-      // },
+      secondary: {
+        name: "Deb Package",
+        url: "https://github.com/ERRORLY/bintoo-website/releases/download/1.1.0/Bintoo_1.1.0_amd64.deb",
+        size: "10.6 MB",
+        ext: ".deb",
+        type: "Debian Package",
+      },
     },
   };
 
@@ -201,7 +201,7 @@ export default function DownloadCard({ isOpen, onClose }: DownloadCardProps) {
               {/* Primary Action Button */}
               <a
                 href={downloads.windows.primary.url}
-                className="group w-full flex items-center justify-center gap-2.5 rounded-xl bg-primary hover:bg-[#1dff68] text-black px-6 py-4.5 text-sm font-bold transition-all duration-150 cursor-pointer shadow-sm"
+                className="group w-full flex items-center justify-center gap-2.5 rounded-xl bg-primary text-black px-6 py-4.5 text-sm font-bold border-2 border-black shadow-[0_4px_0px_0px_#13ec5b] hover:translate-y-[4px] hover:shadow-none transition-all duration-150 ease-in-out cursor-pointer"
               >
                 <span className="material-symbols-outlined text-[18px]">
                   download
